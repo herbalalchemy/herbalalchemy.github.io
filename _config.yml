@@ -1,0 +1,4 @@
+name: 'Herbal Alchemy'
+baseurl: ''
+plugins:
+- jekyll-haml

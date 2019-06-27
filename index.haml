@@ -3,15 +3,40 @@ layout: default
 title: Herbal Alchemy
 ---
 
-<!-- HEADER -->
-#header_wrap.outer
+/ HEADER
+#header-wrap.outer
   .inner.center
-    -#%img#background-image{src: "", alt: ""}
+    %img#logo{src: "images/logo-alpha-white.png", alt: ""}
 
-#high-priority-information-wrap.outer
-  %section#high-priority-information.inner.center
-    .main-text herbal alchemy
-    .sub-text natura renovatur integra
+    #high-priority-information-wrap
+      %section#high-priority-information
+        .main-text herbal alchemy
+        / .sub-text natura renovatur integra
 
-<!-- MAIN CONTENT -->
-<!-- Nav buttons -->
+/ MAIN CONTENT
+
+/ NAV BUTTONS
+#nav-wrap.outer
+  %ul#nav.inner.center
+    %li#products-button.tab-button Products
+    %li#sustainability-button.tab-button Sustainability
+    %li#locations-button.tab-button Where to Purchase
+    %li#about-button.tab-button About
+  / not using sub-nav right now
+  / %ul#products-sub-nav.sub-nav.inner.center.hidden
+  /   %li#smoking-blends-button.tab-button Smoking Blends
+  /   %li#smoking-blendz-button.tab-button Smoking Blendz
+
+/ CONTENT
+#products-wrap.outer
+  %section#products.tab.inner.center.hidden
+    Whether you don't want tobacco or do want something different, Herbal Alchemy's smoking blends offer a more enjoyable smoking experience -
+
+#sustainability-wrap.outer
+  %section#sustainability.tab.inner.center.hidden
+
+#locations-wrap.outer
+  %section#locations.tab.inner.center.hidden
+
+#about-wrap.outer
+  %section#about.tab.inner.center.hidden

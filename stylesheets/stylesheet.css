@@ -47,8 +47,29 @@ Theme Styles
   src: url("../fonts/AuldMagick.ttf");
 }
 
+/* Set KeepCalm font-family from file */
+@font-face {
+  font-family: KeepCalm;
+  src: url("../fonts/KeepCalm-Medium.ttf");
+}
+
+/* Set DKBoardingHouse font-family from file */
+@font-face {
+  font-family: DKBoardingHouse;
+  src: url("../fonts/DKBoardingHouse.otf");
+}
+
 html {
-  background: #000;
+  background: #89b897;
+}
+
+#bg-image {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: -7em;
+  opacity: 0.28;
 }
 
 body {
@@ -56,21 +77,6 @@ body {
   color: #fff;
   overflow-x: hidden;
   overflow-y: hidden; /* careful...*/
-}
-
-#nav {
-  margin-bottom: 2em;
-}
-
-#nav li {
-  display: inline-block;
-  margin-left: 2em;
-  margin-right: 2em;
-}
-
-#nav li img {
-  width: 66%;
-  cursor: pointer;
 }
 
 /* https://stackoverflow.com/a/20352949/2128691 */
@@ -222,30 +228,80 @@ section {
   font-size: 1.25em;
 }
 
-#background-image {
-  position: fixed;
-  opacity: 0.25;
+#logo {
   width: 66vw;
   border: none;
   box-shadow: none;
   display: block;
 }
 
-#high-priority-information {
-  margin-top: 5em;
-}
-
 #high-priority-information .main-text {
-  /* till i've got a logo */
   text-transform: uppercase;
   font-family: 'metamorphous';
-  font-size: 10vw;
+  font-size: 5vw;
 }
 
 #high-priority-information .sub-text {
   font-family: AuldMagick;
-  font-size: 7vw;
+  font-size: 5vw;
   letter-spacing: 7px;
+}
+
+/* NAV */
+
+#nav {
+  margin-bottom: 2em;
+  max-width: 100%;
+  width: 100%;
+}
+
+.top-nav-bar {
+  background: black;
+}
+
+#nav li {
+  font-family: 'DKBoardingHouse';
+  color: darkolivegreen;
+  text-transform: uppercase;
+  font-size: 3vw;
+  letter-spacing: 3px;
+  display: inline-block;
+  margin-left: 1vw;
+  margin-right: 1vw;
+  cursor: pointer;
+}
+
+#nav li.selected {
+  color: #89b897;
+  text-shadow: 3px 3px 6px black;
+}
+
+/**** not using sub-nav right now ****/
+/****
+.sub-nav {
+  margin-top: -3em !important;
+}
+
+.sub-nav li {
+  font-family: 'DKBoardingHouse';
+  color: white;
+  text-transform: uppercase;
+  font-size: 1.1em;
+  letter-spacing: 2px;
+  display: inline-block;
+  cursor: pointer;
+  margin-right: 1.2em;
+}
+
+.sub-nav li.selected {
+  text-decoration: underline;
+}
+****/
+
+#nav-wrap:after {
+  content: '';
+  display: block;
+  clear: both;
 }
 
 .outer {
@@ -257,6 +313,9 @@ section {
   max-width: 70%;
   padding: 15px 10px;
   margin: 0 auto;
+}
+
+footer {
 }
 
 /*******************************************************************************

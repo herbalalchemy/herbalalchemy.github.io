@@ -30,13 +30,17 @@ title: Herbal Alchemy
 / CONTENT
 #products-wrap.outer
   %section#products.tab.inner.center.hidden
-    Whether you don't want tobacco or do want something different, Herbal Alchemy's smoking blends offer a more enjoyable smoking experience -
+    {% haml products.haml %}
 
 #sustainability-wrap.outer
   %section#sustainability.tab.inner.center.hidden
+    {% haml sustainability.haml %}
 
 #locations-wrap.outer
   %section#locations.tab.inner.center.hidden
+    %section#description-wrap
+      Coming Soon...
 
 #about-wrap.outer
   %section#about.tab.inner.center.hidden
+    {% haml about.haml %}

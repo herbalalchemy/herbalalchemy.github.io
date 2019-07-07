@@ -199,6 +199,17 @@ hr {
   background: url('../images/bg_hr.png') repeat-x center;
 }
 
+.outer {
+  width: 100%;
+}
+
+.inner {
+  position: relative;
+  max-width: 70%;
+  padding: 15px 10px;
+  margin: 0 auto;
+}
+
 .button {
   text-transform: uppercase;
   background: #fff;
@@ -229,16 +240,18 @@ section {
 }
 
 #logo {
-  width: 66vw;
+  width: 80%;
   border: none;
   box-shadow: none;
   display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #high-priority-information .main-text {
   text-transform: uppercase;
   font-family: 'metamorphous';
-  font-size: 5vw;
+  font-size: 4vw;
 }
 
 #high-priority-information .sub-text {
@@ -304,15 +317,8 @@ section {
   clear: both;
 }
 
-.outer {
-  width: 100%;
-}
-
-.inner {
-  position: relative;
-  max-width: 70%;
-  padding: 15px 10px;
-  margin: 0 auto;
+section #description-wrap {
+  width: 40%;
 }
 
 footer {

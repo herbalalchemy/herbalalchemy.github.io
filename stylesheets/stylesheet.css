@@ -60,7 +60,8 @@ Theme Styles
 }
 
 html {
-  background: #89b897;
+  /* background: #91b897; */
+  background: lightslategrey;
 }
 
 #bg-image {
@@ -69,7 +70,7 @@ html {
   top: 50%;
   transform: translate(-50%, -50%);
   margin-top: -7em;
-  opacity: 0.28;
+  opacity: 0.35;
 }
 
 body {
@@ -244,6 +245,7 @@ section {
   border: none;
   box-shadow: none;
   display: block;
+  margin-top: 2em;
   margin-left: auto;
   margin-right: auto;
 }
@@ -252,6 +254,8 @@ section {
   text-transform: uppercase;
   font-family: 'metamorphous';
   font-size: 4vw;
+  letter-spacing: 9px;
+  padding-left: 2vw;
 }
 
 #high-priority-information .sub-text {
@@ -269,12 +273,17 @@ section {
 }
 
 .top-nav-bar {
-  background: black;
+  background: darkslategrey;
+}
+
+.top-nav-bar #nav li {
+  text-shadow: none;
 }
 
 #nav li {
   font-family: 'DKBoardingHouse';
-  color: darkolivegreen;
+  color: white;
+  text-shadow: 3px 3px 9px black;
   text-transform: uppercase;
   font-size: 3vw;
   letter-spacing: 3px;
@@ -285,7 +294,7 @@ section {
 }
 
 #nav li.selected {
-  color: #89b897;
+  color: #91b897;
   text-shadow: 3px 3px 6px black;
 }
 

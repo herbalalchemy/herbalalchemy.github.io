@@ -12,7 +12,9 @@ $(document).ready(function() {
 
     // convert to secondary page style on initial nav click
     // hide initally visible large logo
-    $("#header-wrap").hide();
+    $("#header-wrap").addClass('hidden');
+    // darken the background color overlay
+    $("#bg-image").css("opacity", "0.28");
     // convert nav styling
     $("#nav-wrap").addClass('top-nav-bar');
 

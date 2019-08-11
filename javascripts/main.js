@@ -8,7 +8,7 @@ $(document).ready(function() {
 
   // nav switching
   $(".tab-button").on("click", function(){
-    var selected = $(this).attr('id').replace('-button', '');
+    var selected = $(this).attr('id').replace('button', 'wrap');
 
     // convert to secondary page style on initial nav click
     // hide initally visible large logo
@@ -22,7 +22,7 @@ $(document).ready(function() {
     $(this).addClass("selected");
 
     // hide all tabs and show the selected tab
-    $(".tab").hide();
+    $(".tab-wrapper").hide();
     $("#"+selected).show();
 
     // show sub-navigation if relevant

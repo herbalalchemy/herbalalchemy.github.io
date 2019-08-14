@@ -363,7 +363,16 @@ section {
 
 /* products.haml */
 
-#smoking-blend-symbols-nav li .name {
+#product-symbols-nav li {
+  align-self: center;
+}
+
+#product-symbols-nav > li.selected {
+  color: #91b897;
+  text-shadow: 3px 3px 6px black;
+}
+
+#product-symbols-nav li .name {
   margin-top: 1em;
 }
 
@@ -371,10 +380,6 @@ section {
   display: grid;
   grid-template-columns: 2fr 3fr;
   grid-column-gap: 3em;
-}
-
-#product-detail-wrap .product-label {
-  width: 100%;
 }
 
 #product-detail-wrap .description {

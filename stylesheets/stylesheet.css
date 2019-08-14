@@ -357,6 +357,10 @@ section {
   letter-spacing: 1px;
 }
 
+#additional-information-wrap img {
+  width: 100%;
+}
+
 /* products.haml */
 
 #smoking-blend-symbols-nav li .name {
@@ -383,6 +387,20 @@ section {
 }
 
 /* end products.haml */
+
+/* sustainability.haml */
+
+#sustainability-symbols-nav li .astrological-symbol {
+  width: 40%;
+}
+
+#sustainability-detail-wrap .sustainability-details {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  grid-column-gap: 3em;
+}
+
+/* end sustainability.haml */
 
 footer {
 }

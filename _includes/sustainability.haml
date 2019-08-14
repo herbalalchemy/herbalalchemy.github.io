@@ -1,4 +1,36 @@
 %section#description-wrap
   -# maybe this should be Markdown?
-  The economy we've created makes it difficult to approach sustainable design principles without enormous economies of scale - nevertheless, sustainability in product and packaging is of the highest priority.
-  No Plastic, No Chemicals, Local and regional sources used whenever possible, Aluminum packaging [reddit chart]
+
+  The economy we've created makes it difficult to approach sustainable design principles without enormous economies of scale - nevertheless, a conscious and considered use of our shared resources is the highest priority.
+
+%section#selection-wrap
+  %ul#sustainability-symbols-nav
+    %li.materials
+      %img.sustainability-symbol{src: "images/plant.png", alt: "Materials"}
+      .name Materials
+    %li.packaging
+      %img.sustainability-symbol{src: "images/packaging.png", alt: "Packaging"}
+      .name Packaging
+    %li.no-plastic
+      %img.sustainability-symbol{src: "images/no-plastic.png", alt: "Natural" }
+      .name Pretty Fucking Natural
+
+%section#additional-information-wrap
+  #sustainability-detail-wrap
+    #materials-details.hidden
+      .sustainability-details
+        %img{src: 'images/logo-alpha-white.png'}
+        .description
+          local, regional, bio, you know
+    #packaging-details.hidden
+      .sustainability-details
+        %a{href: 'https://www.reddit.com/r/ZeroWaste/comments/bwj1jc/glass_vs_plastic_vs_aluminum_and_the/'}
+          %img#materials-chart{src: 'images/plastic-aluminium-glass.png', alt: 'this sick chart'}
+        .description
+          At first, I considered traditional tobacco pouches, however these are coated in plastic and while cellulose alternatives do exist, they are difficult to source and often need to be shipped trans-Atlantically.
+          </br>After enough research, aluminum proved to be the most sustainable option - although packaging-free, where possible, is still the best option.
+    #no-plastic-details.hidden
+      .sustainability-details
+        %img{src: 'images/logo-alpha-white.png'}
+        .description
+          Every effort is made to reduce or eliminate plastic and unnecessary waste in each process - from ordering raw materials to shipping orders.

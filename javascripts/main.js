@@ -44,6 +44,14 @@ $(document).ready(function() {
       $(".sub-nav").hide();
     };
   });
+
+  // track clicks of any element with ga-track class
+  $('.ga-track').on('click', function() {
+    var name = $(this).text() || this.value || this.getAttribute('data-tracker')
+    console.log(name);
+    if(name == undefined) { console.log(this) };
+    gtag('send', 'event', 'button', 'click-'+name, 1);
+  });
 });
 
 goToPage = function(path){

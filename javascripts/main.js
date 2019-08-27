@@ -48,9 +48,8 @@ $(document).ready(function() {
   // track clicks of any element with ga-track class
   $('.ga-track').on('click', function() {
     var name = $(this).text() || this.value || this.getAttribute('data-tracker')
-    console.log(name);
 
-    gtag('event', 'click, {
+    gtag('event', 'click', {
       'event_category': 'engagement',
       'event_label': 'click-'+name
     });

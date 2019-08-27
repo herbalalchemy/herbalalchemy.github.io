@@ -429,6 +429,10 @@ section {
   align-self: center;
 }
 
+#sustainability-information .sustainability-details .description {
+  align-self: center;
+}
+
 /* end sustainability.haml */
 
 /* about.haml */

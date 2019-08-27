@@ -49,8 +49,11 @@ $(document).ready(function() {
   $('.ga-track').on('click', function() {
     var name = $(this).text() || this.value || this.getAttribute('data-tracker')
     console.log(name);
-    if(name == undefined) { console.log(this) };
-    gtag('send', 'event', 'button', 'click-'+name, 1);
+
+    gtag('event', 'click, {
+      'event_category': 'engagement',
+      'event_label': 'click-'+name
+    });
   });
 });
 

@@ -1,34 +1,36 @@
-%section#description-wrap
+%section.description-wrap
   -# maybe this should be Markdown?
 
   The economy we've created makes it difficult to approach sustainable design principles without enormous economies of scale - nevertheless, a conscious and considered use of our shared resources is the highest priority.
 
-%section#selection-wrap
+%section.selection-wrap
   %ul#sustainability-symbols-nav
-    %li.materials
+    %li.materials.ga-track
       %img.sustainability-symbol{src: "images/plant.png", alt: "Materials"}
       .name Materials
-    %li.packaging
+    %li.packaging.ga-track
       %img.sustainability-symbol{src: "images/packaging.png", alt: "Packaging"}
       .name Packaging
-    %li.no-plastic
-      %img.sustainability-symbol{src: "images/no-plastic.png", alt: "Natural" }
-      .name Pretty Fucking Natural
+    %li.no-plastic.ga-track
+      %img.sustainability-symbol{src: "images/no-plastic.png", alt: "Zero-Waste" }
+      .name Zero-Waste
 
-%section#additional-information-wrap
-  #sustainability-detail-wrap
+%section.additional-information-wrap#sustainability-information.hidden
+  .additional-information
     #materials-details.hidden
       .sustainability-details
         %img{src: 'images/logo-alpha-white.png'}
         .description
-          local, regional, bio, you know
+          local > regional and I hope to improve my sources as time goes on. Not all of my herbs are certified as bio, but that's because some are wildcrafted and as such can not be certified - however in my mind, consciously foraged wild plants are better than bio plants grown in a greenhouse.
     #packaging-details.hidden
       .sustainability-details
-        %a{href: 'https://www.reddit.com/r/ZeroWaste/comments/bwj1jc/glass_vs_plastic_vs_aluminum_and_the/'}
-          %img#materials-chart{src: 'images/plastic-aluminium-glass.png', alt: 'this sick chart'}
+        %a{href: 'https://i.redd.it/86rx66vhw8231.png', target: '_blank'}
+          %img#materials-chart.ga-track{data:{tracker: 'reddit-packaging-chart'}, src: 'images/plastic-aluminium-glass.png', alt: 'this sick chart'}
         .description
-          At first, I considered traditional tobacco pouches, however these are coated in plastic and while cellulose alternatives do exist, they are difficult to source and often need to be shipped trans-Atlantically.
-          </br>After enough research, aluminum proved to be the most sustainable option - although packaging-free, where possible, is still the best option.
+          %p
+            Traditional tobacco pouches are coated in plastic and while cellulose alternatives do exist, they are difficult to source and often need to be shipped trans-Atlantically.
+          %p
+            Aluminum proved to be the most sustainable option - it's lightweight and durable which reduces shipping costs and easy to reuse or recycle. Packaging-free, where possible, is still the best option - find options in the webshop.
     #no-plastic-details.hidden
       .sustainability-details
         %img{src: 'images/logo-alpha-white.png'}

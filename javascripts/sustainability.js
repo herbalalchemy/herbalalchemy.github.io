@@ -6,7 +6,8 @@ $(document).ready(function() {
     $("#sustainability-symbols-nav > li.selected").removeClass("selected");
     $(this).addClass("selected");
 
-    $("#sustainability-detail-wrap").children().addClass('hidden');
-    $("#sustainability-detail-wrap #"+selected+"-details").removeClass("hidden");
+    $("#sustainability-information").removeClass("hidden");
+    $("#sustainability-information .additional-information").children().addClass('hidden');
+    $("#sustainability-information #"+selected+"-details").removeClass("hidden");
   })
 });

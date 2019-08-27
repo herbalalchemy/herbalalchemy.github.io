@@ -6,7 +6,12 @@ $(document).ready(function() {
     $("#product-symbols-nav > li.selected").removeClass("selected");
     $(this).addClass("selected");
 
-    $("#product-detail-wrap").children().addClass('hidden');
-    $("#product-detail-wrap #"+selected+"-product-details").removeClass("hidden");
-  })
+    $("#product-information").removeClass('hidden');
+    $("#product-information .additional-information").children().addClass('hidden');
+    $("#product-information #"+selected+"-product-details").removeClass("hidden");
+  });
+
+  $(".product-img-wrapper").on("click hover", function(){
+    $(this).children().toggle();
+  });
 });

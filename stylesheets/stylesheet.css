@@ -59,58 +59,10 @@ Theme Styles
   src: url("../fonts/DKBoardingHouse.otf");
 }
 
-html {
-  /* background: #91b897; */
-  background: lightslategrey;
-}
-
-#bg-image {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  margin-top: -7em;
-  opacity: 0.35;
-}
-
 body {
   min-height: 100%;
   color: #fff;
   overflow-x: hidden;
-  overflow-y: hidden; /* careful...*/
-}
-
-/* https://stackoverflow.com/a/20352949/2128691 */
-body::after {
-  content: '';
-  display: block;
-  height: 3em; /* Set same as footer's height */
-}
-
-footer {
-  position: fixed;
-  padding-bottom: 5px;
-  bottom: 0;
-  width: 100%;
-  height: 3em;
-  text-align: center;
-  font-family: 'metamorphous';
-  font-size: 0.777em;
-  letter-spacing: 3px;
-}
-
-#footer-links ul {
-  list-style: none;
-  margin-left: 0;
-}
-
-#footer-links li {
-  vertical-align: middle;
-}
-
-#footer-links a {
-  text-decoration: none;
-  cursor: pointer;
 }
 
 #impressum {
@@ -128,7 +80,12 @@ footer {
 
 a {
   text-decoration: none;
-  color: white;
+  color: black;
+}
+
+a:hover {
+  text-decoration: none;
+  color: black;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -234,244 +191,171 @@ hr {
 }
 
 /*******************************************************************************
-Full-Width Styles
+Mobile first - styles for larger screens follow
 *******************************************************************************/
 section {
+  width: 100%;
   font-size: 1.25em;
 }
 
-#logo {
+#landing {
+  /*
+   background-image: url('../images/wildplants-min.jpg');
+  background-position: center;
+  background-size: cover;
+  opacity: 80%;
+  */
+  background: black;
+  height: 100vh;
+}
+
+#landing #logo {
   width: 80%;
   border: none;
   box-shadow: none;
   display: block;
-  margin-top: 2em;
+  padding-top: 10%;
   margin-left: auto;
   margin-right: auto;
 }
 
-#high-priority-information .main-text {
+#landing #high-priority-information .main-text {
   text-transform: uppercase;
-  font-family: 'metamorphous';
-  font-size: 4vw;
+  font-family: 'Metamorphous';
+  font-size: 8vw;
   letter-spacing: 9px;
   padding-left: 2vw;
 }
 
-#high-priority-information .sub-text {
-  font-family: AuldMagick;
-  font-size: 5vw;
-  letter-spacing: 7px;
-}
+/* products.haml */
 
-/* NAV */
-
-#nav {
-  margin-bottom: 2em;
-  max-width: 100%;
-  width: 100%;
-}
-
-.top-nav-bar {
-  background: darkslategrey;
-}
-
-.top-nav-bar #nav li {
-  text-shadow: none;
-}
-
-#nav li {
-  font-family: 'DKBoardingHouse';
+#products {
+  background-image: url('https://garden.spoonflower.com/c/7918859/p/f/m/reHHKVkTowfk5L40xHE00e5GM13VFuLxQ6d8W5iSuS3Ne-am493dRw/Alchemy.jpg');
   color: white;
-  text-shadow: 3px 3px 9px black;
-  text-transform: uppercase;
-  font-size: 3vw;
-  letter-spacing: 3px;
-  display: inline-block;
-  margin-left: 1vw;
-  margin-right: 1vw;
-  cursor: pointer;
-}
-
-#nav li.selected {
-  color: #91b897;
-  text-shadow: 3px 3px 6px black;
-}
-
-/**** not using sub-nav right now ****/
-/****
-.sub-nav {
-  margin-top: -3em !important;
-}
-
-.sub-nav li {
-  font-family: 'DKBoardingHouse';
-  color: white;
-  text-transform: uppercase;
-  font-size: 1.1em;
-  letter-spacing: 2px;
-  display: inline-block;
-  cursor: pointer;
-  margin-right: 1.2em;
-}
-
-.sub-nav li.selected {
-  text-decoration: underline;
-}
-****/
-
-#nav-wrap:after {
-  content: '';
-  display: block;
-  clear: both;
-}
-
-.tab {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: fit-content(30%);
-  grid-column-gap: 1em;
-  grid-row-gap: 2em;
-  font-family: DKBoardingHouse;
-  font-size: 1.3em;
-  letter-spacing: 1px;
-  line-height: 1;
-}
-
-.description-wrap {
-  font-size: 1.5em;
-}
-
-.selection-wrap ul {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  padding-left: 0; /* overwrite default ul style */
-}
-
-.selection-wrap li {
-  cursor: pointer;
-  padding: 0.5em;
-}
-
-.selection-wrap li.selected {
-  /*
-  background: darkslategrey;
-  border: 2px solid #91b897;
-  */
-  text-shadow: 3px 3px 6px black;
-}
-
-.selection-wrap li img {
-  width: auto;
-  height: 3em;
-}
-
-.additional-information-wrap {
-  grid-column: 1/3;
-  background: rgba(0,0,0,0.6);
-  margin-left: -1000px;
-  margin-right: -1000px;
-  letter-spacing: 1px;
-}
-
-/* make a full-width stripe */
-.additional-information {
-  padding-left: 1000px;
-  padding-right: 1000px;
-  padding-top: 1em;
+  border-top: 3px solid black;
   padding-bottom: 1em;
 }
 
-.additional-information-wrap img {
-  width: 100%;
-}
+#products #smoking-blends .intro .title {
+  background: white;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  font-weight: bold;
+  font-size: 2.5em;
+  color: black;
+  text-transform: uppercase;
 
-/* products.haml */
-
-#product-symbols-nav li .name {
   margin-top: 1em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+
 }
 
-#product-information .product-details {
-  display: grid;
-  grid-template-columns: 2fr 3fr;
-  grid-column-gap: 3em;
+#products #smoking-blends .intro .description {
+  background: white;
+  border: 2px solid black;
+  color: black;
+  opacity: 0.95;
+
+  width: 90vw;
+  margin: 1.5em auto;
+  padding: 1em;
 }
 
-#product-information .product-img-wrapper {
+/*
+#products #smoking-blends .icons .icon {
+  display: inline;
+}
+
+#products #smoking-blends .icons img {
+  width: 20%;
+}
+*/
+
+#products #product-information .label {
+  text-align: center;
+}
+
+#products #product-information .label img {
+  width: 55vw;
+}
+
+#products #smoking-blends #product-information .product-details {
+  background: white;
+  border: 2px solid black;
+  color: black;
+  opacity: 0.95;
+
+  width: 90vw;
+  /* height: 97vh; */
+  margin: 5vw;
+  padding: 1em;
+}
+
+#products #product-information .product-img-wrapper {
   cursor: pointer;
 }
 
-#product-information .description {
-  align-self: center;
-}
-
-#product-information .description .webshop-link {
-  font-size: 1.5em;
-  margin-top: 1em;
+#products #product-information .product-img-wrapper img {
+  width: 30%;
 }
 
 /* end products.haml */
 
-/* sustainability.haml */
-
-#sustainability-symbols-nav li .astrological-symbol {
-  width: 40%;
-}
-
-#sustainability-information .sustainability-details {
-  display: grid;
-  grid-template-columns: 2fr 3fr;
-  grid-column-gap: 3em;
-}
-
-#sustainability-information .sustainability-details a {
-  align-self: center;
-}
-
-#sustainability-information .sustainability-details .description {
-  align-self: center;
-}
-
-/* end sustainability.haml */
-
-/* about.haml */
-#about.tab {
-  grid-template-columns: 1fr;
-}
-
-#about .image-wrap img {
-  width: 60%;
-}
-
-/* end about.haml */
-
 footer {
+  position: static;
+  bottom: 0;
+  background: white;
+  border-top: 1px solid black;
+  width: 100%;
+  letter-spacing: 3px;
+  padding: 1em 0;
+}
+
+footer a {
+  color: black;
+  text-decoration: none;
 }
 
 /*******************************************************************************
-Small Device Styles
+Large Device Styles
 *******************************************************************************/
 
-@media (min-width: 0px) and (max-width: 800px) {
-  body {
-    overflow-y: unset;
+@media (min-width: 640px) {
+  #landing #high-priority-information .main-text {
+    font-size: 6vw;
   }
 
-  .tab {
-    grid-template-columns: 1fr;
+  #products #smoking-blends .intro .description {
+    width: 60vw;
   }
 
-  .additional-information-wrap {
-    grid-column: unset;
+  #products #smoking-blends #product-information .product-details {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    height: auto;
   }
 
-  #product-information .product-img-wrapper {
+  #products #smoking-blends #product-information .product-details .label img {
+    width: 20vw;
+  }
+
+  #products #smoking-blends #product-information .product-details .description {
     align-self: center;
+    font-size: 1em;
+    text-align: left;
+    width: 80%;
+    margin-left: 2em;
+  }
+}
+
+@media (min-width: 1440px) {
+  #landing #logo {
+    width: 60%;
+    padding-top: 5%;
   }
 
-  #sustainability-information .sustainability-details {
-    grid-template-columns: 1fr;
-    grid-row-gap: 1em;
+  #landing #high-priority-information .main-text {
+    font-size: 4vw;
   }
 }

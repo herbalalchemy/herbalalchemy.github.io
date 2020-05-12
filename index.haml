@@ -3,44 +3,16 @@ layout: default
 title: Herbal Alchemy
 ---
 
-/ HEADER
-#header-wrap.outer
-  .inner.center
+%section#landing
+  .center
     %img#logo{src: "images/logo-alpha-white.png", alt: ""}
 
-    #high-priority-information-wrap
-      %section#high-priority-information
-        .main-text herbal alchemy
-        / .sub-text natura renovatur integra
-
-/ MAIN CONTENT
-
-/ NAV BUTTONS
-#nav-wrap.outer
-  %ul#nav.inner.center
-    %li#products-button.tab-button.ga-track Products
-    %li#sustainability-button.tab-button.ga-track Sustainability
-    %li#locations-button.tab-button.ga-track Where to Purchase
-    %li#about-button.tab-button.ga-track About
-  / not using sub-nav right now
-  / %ul#products-sub-nav.sub-nav.inner.center.hidden
-  /   %li#smoking-blends-button.tab-button Smoking Blends
-  /   %li#smoking-blendz-button.tab-button Smoking Blendz
+    #high-priority-information
+      .main-text herbal alchemy
 
 / CONTENT
-#products-wrap.outer.tab-wrapper.hidden
-  %section#products.tab.inner.center
-    {% haml products.haml %}
+#products
+  {% haml products.haml %}
 
-#sustainability-wrap.outer.tab-wrapper.hidden
-  %section#sustainability.tab.inner.center
-    {% haml sustainability.haml %}
-
-#locations-wrap.outer.tab-wrapper.hidden
-  %section#locations.tab.inner.center
-    %section.description-wrap
-      Coming Soon...
-
-#about-wrap.outer.tab-wrapper.hidden
-  %section#about.tab.inner.center
-    {% haml about.haml %}
+/ %section#sustainability
+/   {% haml sustainability.haml %}

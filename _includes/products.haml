@@ -1,43 +1,42 @@
-%section.description-wrap
-  -# maybe this should be Markdown?
-  Whether you don't want tobacco or do want something different, Herbal Alchemy's smoking blends offer a more enjoyable smoking experience - each blend is hand-crafted according to carefully formulated recipes to create smooth smoke that tastes great while adding a gentle somatic effect.
+#smoking-blends
+  .intro
+    .title.center Herbal Smoking Blends
+    .description.center
+      %p Whether you're tired of tobacco or just want something different, Herbal Alchemy's smoking blends offer a more enjoyable smoking experience - each blend is hand-crafted to create a smooth smoke that tastes great while adding a gentle somatic effect.
+      %button.ga-track.button.btn-lg{data: {tracker: 'smoking-blends-shop-now'}}
+        %a{href: 'tmpshop'} shop now
 
-%section.selection-wrap
-  %ul#product-symbols-nav
-    %li.mercurio.ga-track
-      %img.astrological-symbol{src: "images/mercury.png", alt: "Mercurio"}
-      .name Mercurio
-    %li.venus.ga-track
-      %img.astrological-symbol{src: "images/venus.png", alt: "Venus"}
-      .name Venus
-    %li.luna.ga-track
-      %img.astrological-symbol{src: "images/luna.png", alt: "Luna"}
-      .name Luna
+  #product-information
+    %section#mercurio-product-details
+      .product-details
+        .label
+          %img{src: './images/mercurio-label.png'}
+        / .product-img-wrapper
+        /   %img.product-label.ga-track{data:{tracker: 'mercurio-label'}, src: "images/mercurio-label.png", alt: "Mercurio"}
+        /   %img.product-inner.hidden.ga-track{data:{tracker: 'mercurio-product-inner'}, src: "images/mercurio-tin-inner.png", alt: "Mercurio-inner"}
+        .description.center
+          %p Mercury is the Messenger of the Gods associated with skillful communication, quick thinking and speedy action.
+          %p This smoking blend offers that same Mercurial energy by combining plants such as Green Tea, Melissa and Rosemary for a smooth uplifting smoke.
 
-%section.additional-information-wrap#product-information.hidden
-  .additional-information
-    #mercurio-product-details.hidden
+    %section#venus-product-details
       .product-details
-        .product-img-wrapper
-          %img.product-label.ga-track{data:{tracker: 'mercurio-label'}, src: "images/mercurio-label.png", alt: "Mercurio"}
-          %img.product-inner.hidden.ga-track{data:{tracker: 'mercurio-product-inner'}, src: "images/mercurio-tin-inner.png", alt: "Mercurio-inner"}
-        .description
-          Mercury is the Messenger of the Gods associated with skillful communication, quick thinking and speedy action. This smoking blend offers that same Mercurial energy by combining plants such as Green Tea, Melissa and Rosemary for a smooth uplifting smoke.
-          .webshop-link Webshop coming soon!
-    #venus-product-details.hidden
+        .label
+          %img{src: './images/venus-label.png'}
+        / .product-img-wrapper
+        /   %img.product-outer.ga-track{data:{tracker: 'venus-label'}, src: "images/venus-label.png", alt: "Venus"}
+        /   %img.product-inner.hidden.ga-track{data:{tracker: 'venus-product-inner'}, src: "images/venus-tin-inner.png", alt: "Venus-inner"}
+        .description.center
+          %p Venus is the Goddess of love and desire associated with all things beautiful, romantic and sensual.
+          %p This smoking blend offers that same Venusian energy by combining plants such as Damiana, Clove and Rose for a smooth seductive smoke.
+
+    %section#luna-product-details
       .product-details
-        .product-img-wrapper
-          %img.product-outer.ga-track{data:{tracker: 'venus-label'}, src: "images/venus-label.png", alt: "Venus"}
-          %img.product-inner.hidden.ga-track{data:{tracker: 'venus-product-inner'}, src: "images/venus-tin-inner.png", alt: "Venus-inner"}
-        .description
-          Venus is the Goddess of love and desire associated with all things beautiful, romantic and sensual. This smoking blend offers that same Venusian energy by combining plants such as Damiana, Clove and Rose for a smooth seductive smoke.
-          .webshop-link Webshop coming soon!
-    #luna-product-details.hidden
-      .product-details
-        .product-img-wrapper
-          %img.product-label.ga-track{data:{tracker: 'luna-label'}, src: "images/luna-label.png", alt: "Luna"}
-          %img.product-inner.hidden.ga-track{data:{tracker: 'luna-product-inner'}, src: "images/luna-tin-inner.png", alt: "Luna-inner"}
-        .description
-          Luna is the Divine embodiment of the Moon associated with transition, emotional energy and world of sleep and dreams. This smoking blend offers that same Lunar energy by combining plants such as Lavender, Mugwort and Hops for a smooth relaxing smoke.
-          .webshop-link Webshop coming soon!
+        .label
+          %img{src: './images/luna-label.png'}
+        / .product-img-wrapper
+        /   %img.product-label.ga-track{data:{tracker: 'luna-label'}, src: "images/luna-label.png", alt: "Luna"}
+        /   %img.product-inner.hidden.ga-track{data:{tracker: 'luna-product-inner'}, src: "images/luna-tin-inner.png", alt: "Luna-inner"}
+        .description.center
+          %p Luna is the Divine embodiment of the Moon associated with transition, emotional energy and world of sleep and dreams.
+          %p This smoking blend offers that same Lunar energy by combining plants such as Lavender, Mugwort and Hops for a smooth relaxing smoke.
 

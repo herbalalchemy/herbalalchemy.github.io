@@ -1,0 +1,25 @@
+#tmpshop {
+  background-image: url('https://garden.spoonflower.com/c/7918859/p/f/m/reHHKVkTowfk5L40xHE00e5GM13VFuLxQ6d8W5iSuS3Ne-am493dRw/Alchemy.jpg');
+  color: black;
+  padding-top: 5vh;
+  height: 95vh;
+}
+
+#tmpshop .info-wrapper {
+  background: white;
+  border: 2px solid black;
+  color: black;
+  opacity: 0.95;
+
+  width: 75vw;
+  margin: 1.5em auto;
+  padding: 1.5em auto;
+}
+
+#tmpshop .info-wrapper .info {
+  padding: 1.5em;
+}
+
+#tmpshop .info-wrapper .info .title {
+  text-transform: uppercase;
+}
